@@ -1,0 +1,26 @@
+- Colocar width 100%, mas estabelecer o máximo da largura que vou querer com max-width usando
+px;
+
+- Ao invés de deixar 100% de width, pode deixar 90% para deixar um respiro.
+- 'auto': a maioria das alturas são automaticas. Se adapta à altura do texto. 
+- 'vh': altura do body geralmente colocamos 100vh, mas para elementos outros podemos tb 
+estabelecer outros vh. 
+-'vw': 
+---------------------------------------------
+html {
+  /*A cada 1rem será considerado 10px*/
+  font-size: 62.5%;
+}
+/*Fica o padrão de 16px*/
+body {
+  font-size: 1.6rem;
+}
+-----------------------------------------------
+obs: Não esquecer de modificar o line-height também para rem. Essa técnica é legal pq, por exemplo,
+se tiver o line-height de 32px = 3.2rem.
+------------------------------------------------
+- Display: grid (???)
+- grid-template-columns: 310px 310px 310px; (???) Pode trocar px por fr
+- grid-gap: 20px; (???)
+- grid-template-columns: repeat(3, minmax(250px, 1fr)) 
+  --> 3 colunas, minimo de 250px de largura e 1fr o maximo(o maximo será adaptado)
